@@ -1,0 +1,23 @@
+
+.btn {
+    font-family: $main-font;
+    border: 2px solid $alt-color; 
+    border-radius: 8px;
+    cursor: pointer;    
+    background-color: $secondary-color;
+    color: white;
+    font-weight: 600;
+    padding: 8px;
+
+    & > * {
+        pointer-events: none;
+    }
+
+    &:hover {
+        background-color: $alt-color; 
+        border-color: $secondary-color;
+    }
+    .fas {
+        margin-right: 5px;
+    }
+}  

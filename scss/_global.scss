@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    min-height: 100vh;
+    font-family: $main-font;
+    background-color: $primary-color;
+}
+
+.work {
+    background-color: #476072;
+}
+
+.grocery {
+    background-color: #BEAEE2; 
+}
+
+.other {
+    background-color: #343F56; 
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <header class="header">
+        <p class="header__icon">
+            <i class="fas fa-sticky-note"></i>
+            <span class="header__icon-title">myNotes</span>
+        </p>
+        <button class="btn btn__add">
+            <i class="fas fa-plus btn__add-icon"></i>
+            <span class="btn__add-title">Dodaj</span>
+        </button>
+        <button class="btn btn__delete">
+            <i class="fas fa-trash-alt btn__delete-icon"></i>
+            <span class="btn__delete-title">Usuń wszystkie</span> 
+        </button>
+    </header>
+
+    <section class="notes"></section>
+
+    <div class="shadow__modal">
+
+        <div class="modal">
+            <h3 class="modal__title">Dodaj notatkę</h3>
+            <label for="category">Wybierz kategorię</label>
+            <select class="categories" id="category">
+                <option value="choose-category" selected disabled>--wybierz kategorię--</option>
+                <option value="work">Praca</option>
+                <option value="grocery">Zakupy</option>
+                <option value="other">Inne</option>
+            </select>
+            <label for="notes">Wpisz notatkę</label>
+            <textarea class="modal__note-content" id="notes" placeholder="Wpisz treść notatki" cols="30" rows="10"></textarea>
+            <div class="modal__btns">  
+                <button class="btn modal__save-btn">
+                    <i class="fas fa-save save-btn__icon"></i>
+                    <span class="save-btn__title">Zapisz</span>
+                </button>
+                <button class="btn modal__cancel-btn">
+                    <i class="far fa-window-close cancel-btn__icon"></i>
+                    <span class="cancel-btn__title">Anuluj</span>
+                </button>
+                <p class="error"></p>
+             </div>
+    
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

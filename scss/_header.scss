@@ -1,0 +1,27 @@
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 5px; 
+    padding: 15px;
+
+
+    &__icon {
+        flex-grow: 1;
+        font-size: 32px;
+
+        .fas {
+            color: $secondary-color; 
+        }
+
+        &-title {
+            color: $alt-color;
+            font-weight: 700;
+        }
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+}

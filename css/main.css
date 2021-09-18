@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  background-color: #FEFBF3;
+}
+
+.work {
+  background-color: #476072;
+}
+
+.grocery {
+  background-color: #BEAEE2;
+}
+
+.other {
+  background-color: #343F56;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 5px;
+  padding: 15px;
+}
+
+.header__icon {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 32px;
+}
+
+.header__icon .fas {
+  color: #F5C6AA;
+}
+
+.header__icon-title {
+  color: #F7D1BA;
+  font-weight: 700;
+}
+
+.header .btn {
+  font-size: 18px;
+}
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  border: 2px solid #F7D1BA;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #F5C6AA;
+  color: white;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.btn > * {
+  pointer-events: none;
+}
+
+.btn:hover {
+  background-color: #F7D1BA;
+  border-color: #F5C6AA;
+}
+
+.btn .fas {
+  margin-right: 5px;
+}
+
+.shadow__modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+}
+
+.shadow__modal .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #F7D1BA;
+  font-size: 14px;
+  gap: 6px;
+  -webkit-box-shadow: 0px 1px 3px #F5C6AA;
+          box-shadow: 0px 1px 3px #F5C6AA;
+}
+
+.shadow__modal .modal__note-content {
+  border: none;
+  -webkit-box-shadow: 0px 1px 3px #F5C6AA;
+          box-shadow: 0px 1px 3px #F5C6AA;
+}
+
+.shadow__modal .modal .categories {
+  padding: 4px;
+  background-color: #FEFBF3;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px #F5C6AA;
+          box-shadow: 0px 1px 3px #F5C6AA;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  gap: 5px;
+}
+
+.notes .note {
+  min-height: 10vw;
+  min-width: 10vw;
+  max-width: 20vw;
+  -webkit-box-shadow: 0px 1px 3px #F5C6AA;
+          box-shadow: 0px 1px 3px #F5C6AA;
+  border-radius: 4px;
+  padding: 5px;
+}
+/*# sourceMappingURL=main.css.map */

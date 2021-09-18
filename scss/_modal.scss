@@ -1,0 +1,40 @@
+.shadow__modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+
+    .modal {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        position: fixed; 
+        top: 50%; 
+        left: 50%; 
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        background-color: $alt-color;
+        font-size: 14px;
+        gap: 6px;
+        box-shadow: 0px 1px 3px $secondary-color;
+    
+        &__note-content {
+            border: none;
+            box-shadow: 0px 1px 3px $secondary-color;
+        }
+    
+        .categories {
+            padding: 4px;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0px 1px 3px $secondary-color;
+        }
+        
+    }
+
+}
+
+.visible {
+    visibility: visible;
+}   
