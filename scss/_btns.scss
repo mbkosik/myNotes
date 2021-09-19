@@ -20,4 +20,23 @@
     .fas {
         margin-right: 5px;
     }
+
+    &--in-note {
+        font-weight: 400;
+        padding: 4px;
+        margin: 0 0 4px 4px;
+        background-color: #FF2626;
+        border: none;
+        font-size: 12px;
+
+        &:hover {
+            background-color: black;
+            border:none;
+            color: #FF2626;
+        }
+
+        .fas {
+            margin: 0 auto; 
+        }
+    }
 }  
